@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "tmp/js",
+    "rootDir": "ts",
+    "resolveJsonModule": true,
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "scripthost"
+    ]
+  },
+  "include": ["ts/**/*.ts", "ts/**/*.json"]
+}

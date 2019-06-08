@@ -1,0 +1,19 @@
+{
+  "name": "ts-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^3.3.29",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.0.7",
+    "jquery": "^3.4.1",
+    "mocha": "^6.1.4",
+    "source-map-support": "^0.5.12"
+  }
+}
