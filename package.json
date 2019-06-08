@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
-    "serve": "beefy beefy.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "watchify tmp/js/src/index.js -o public/bundle.js",
+    "beefy": "beefy beefy.js",
+    "test": "mocha -r source-map-support/register tmp/js/test"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "browserify": "^16.2.3",
     "jquery": "^3.4.1",
     "mocha": "^6.1.4",
-    "source-map-support": "^0.5.12"
+    "source-map-support": "^0.5.12",
+    "watchify": "^3.11.1"
   }
 }
