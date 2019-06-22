@@ -6,7 +6,6 @@
   "scripts": {
     "watch": "tsc -w",
     "bundle": "watchify tmp/js/src/index.js -o public/bundle.js",
-    "beefy": "beefy beefy.js",
     "test": "mocha -r source-map-support/register tmp/js/test"
   },
   "author": "",
@@ -15,7 +14,6 @@
     "@types/jquery": "^3.3.29",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.0.7",
-    "beefy": "^2.1.8",
     "browserify": "^16.2.3",
     "jquery": "^3.4.1",
     "mocha": "^6.1.4",
