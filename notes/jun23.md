@@ -78,10 +78,12 @@ The `typeof` operator helps get type information.
   e. function () { }
 
 2. Will the following cause an error?
+
     const obj = { greeting: "hello" };
     obj.greeting = "hi";
 
 3. How about the following?
+
     const obj = { greeting: "hello" };
     obj = { greeting: "hi" };
 
@@ -89,8 +91,10 @@ The `typeof` operator helps get type information.
 
 
 4. Run the following two lines of code in the console and explain the difference you see:
+
     console.log(Math.random())
     console.log(Math.random) 
+
 5. Without running the following lines of code, predict the result of each:
     a. `typeof (Math.random())`
     b. `typeof (Math.random)`
@@ -98,9 +102,11 @@ The `typeof` operator helps get type information.
     d. `typeof (typeof Math.random)`
 
 6. Arrays have a method called `forEach`. It accepts a function as a parameter and calls it with each of the values in the array. We'll make use of it to create a function to output an array in such a way that will allow the caller to determine how the output is done.
+
     const outputArray = function (array, outputNum) { 
       array.forEach(outputNum)
     }
+
   a. What is the type for each of the variables and parameters above?
   b. Enter the above code into the Dev Tools console, and write a function `printNum` that will be useful as the outputNum parameter to the `outputArray` function. Make sure it works in the console.
   c. Create another variation of that function.
