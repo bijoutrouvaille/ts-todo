@@ -1,21 +1,21 @@
-# June 23 Lesson Notes
+# June 23 Session
 
-## Overview
+## Notes
 
-### Components of Web Programming
+### Overview: Components of Web Programming
 
 - language: basics, data structures, type safety
 - browser: HTML, CSS, DOM 
 - architecture: testing, frameworks, group work
 
-## Browser Developer Tools
+### Browser Developer Tools
 
 1. Console
 2. Element Inspector
   - DOM panel
   - Styles panel
 
-## Variables
+### Variables
 
 _note_: Values vs Variables
   variables are containers that hold values.
@@ -68,7 +68,7 @@ The `typeof` operator helps get type information.
   - there exist other new and more advanced types and constructors
   - Map, Set, NaN, BigInt, Symbol
 
-### Exercises
+## Exercises
 
 1. Is this value a primitive?
   - a. "hello"
