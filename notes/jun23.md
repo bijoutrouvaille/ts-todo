@@ -71,17 +71,17 @@ The `typeof` operator helps get type information.
 ### Exercises
 
 1. Is this value a primitive?
-  a. "hello"
-  b. 37
-  c. {}
-  d. [1,3,7]
-  e. function () { }
+  - a. "hello"
+  - b. 37
+  - c. {}
+  - d. [1,3,7]
+  - e. function () { }
 
 2. Will the following cause an error?
-
+```
     const obj = { greeting: "hello" };
     obj.greeting = "hi";
-
+```
 3. How about the following?
 ```
     const obj = { greeting: "hello" };
