@@ -1,21 +1,21 @@
-# June 23 Lesson Notes
+# June 23 Session
 
-## Overview
+## Notes
 
-### Components of Web Programming
+### Overview: Components of Web Programming
 
 - language: basics, data structures, type safety
 - browser: HTML, CSS, DOM 
 - architecture: testing, frameworks, group work
 
-## Browser Developer Tools
+### Browser Developer Tools
 
 1. Console
 2. Element Inspector
   - DOM panel
   - Styles panel
 
-## Variables
+### Variables
 
 _note_: Values vs Variables
   variables are containers that hold values.
@@ -68,45 +68,46 @@ The `typeof` operator helps get type information.
   - there exist other new and more advanced types and constructors
   - Map, Set, NaN, BigInt, Symbol
 
-### Exercises
+## Exercises
 
 1. Is this value a primitive?
-  a. "hello"
-  b. 37
-  c. {}
-  d. [1,3,7]
-  e. function () { }
+  - a. "hello"
+  - b. 37
+  - c. {}
+  - d. [1,3,7]
+  - e. function () { }
 
 2. Will the following cause an error?
-
+```
     const obj = { greeting: "hello" };
     obj.greeting = "hi";
-
+```
 3. How about the following?
-
+```
     const obj = { greeting: "hello" };
     obj = { greeting: "hi" };
-
+```
   What's the difference?
 
 
 4. Run the following two lines of code in the console and explain the difference you see:
-
+```
     console.log(Math.random())
     console.log(Math.random) 
-
+```
 5. Without running the following lines of code, predict the result of each:
-    a. `typeof (Math.random())`
-    b. `typeof (Math.random)`
-    c. `typeof (typeof Math.random())`
-    d. `typeof (typeof Math.random)`
+    - a. `typeof (Math.random())`
+    - b. `typeof (Math.random)`
+    - c. `typeof (typeof Math.random())`
+    - d. `typeof (typeof Math.random)`
 
 6. Arrays have a method called `forEach`. It accepts a function as a parameter and calls it with each of the values in the array. We'll make use of it to create a function to output an array in such a way that will allow the caller to determine how the output is done.
-
+  ```
     const outputArray = function (array, outputNum) { 
       array.forEach(outputNum)
     }
-
-  a. What is the type for each of the variables and parameters above?
-  b. Enter the above code into the Dev Tools console, and write a function `printNum` that will be useful as the outputNum parameter to the `outputArray` function. Make sure it works in the console.
-  c. Create another variation of that function.
+  ```
+  
+  + a. What is the type for each of the variables and parameters above?
+  + b. Enter the above code into the Dev Tools console, and write a function `printNum` that will be useful as the outputNum parameter to the `outputArray` function. Make sure it works in the console.
+  + c. Create another variation of that function.
