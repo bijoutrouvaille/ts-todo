@@ -9,5 +9,5 @@ function main() {
   }
   $('body').on('click', print3)
 }
-
+let x = <T>(t:T)=>(typeof t)
 $(main);
