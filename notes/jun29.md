@@ -139,5 +139,6 @@ console.log( array2 ); // predict output
 
 8.
 Why is the function-parameter of `map` and `forEach` called iterator?
+
 9. 
 Why do you think functions `forEach` and `map` were named as they were?
