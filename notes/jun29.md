@@ -123,7 +123,7 @@ const printNumber = ... ;
 The `map` function on an array is very similar to `forEach`, except returns a value, which is a new array of the same length. Just like `forEach`, `map` takes 1 parameter, which is a function called `iter`, short for _iterator_. The iterator function is expected to accept as parameter any value from the array and return some other value. This return value is then placed in the same position of the new array as the value of the old array was in for the parameter to the iterator.
 
 6. 
-Try to search on the internet for examples of this function.
+Try to search on the internet for examples of how to use this function.
 
 7. 
 Predict the output of the following:
