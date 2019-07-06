@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "tsc -w",
     "bundle": "watchify tmp/js/src/index.js -o public/bundle.js",
-    "test": "mocha -r source-map-support/register tmp/js/test"
+    "test": "mocha -w -r source-map-support/register tmp/js/test"
   },
   "author": "",
   "license": "ISC",
