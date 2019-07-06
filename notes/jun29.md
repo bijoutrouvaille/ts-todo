@@ -57,11 +57,16 @@ function addNums (a,b,c) {
   return (a + b + c) 
 }
 
-addNums(2, 5, 3); // predict output
+addNums(1, 5, 2); // predict output
 
 const addThreeNums = addNums;
 
+
+addThreeNums === addNums // predict
+
+
 typeof addThreeNums; // predict output
+
 addThreeNums(2, 5, 3); // predict output
 addThreeNums(1, 10, 100); // predict output
 
@@ -81,6 +86,8 @@ const math = {
 math.add(4, 7, 9); // predict 
 math.mult(7, 3); // predict
 math.max(11, 22); // predict
+
+typeof math.mult // predict
 ```
 
 For 2-5 Complete the code by replacing `...`
@@ -88,7 +95,7 @@ For 2-5 Complete the code by replacing `...`
 2.
 ```
 const add = ... ;
-console.log(add(4, 7); // should print 11
+console.log(add(4, 7)); // should print 11
 ```
 
 3.
@@ -116,9 +123,12 @@ printProduct(7, 5) // should display a string "the number is 35"
 
 5. 
 ```
-const printNumber = ... ;
-[ 1, 2, 3 ].forEach(printNumber)
+const printNumber = function (x) { 
+  console.log(x)
+} ;
+[ 1, 2, 3 ].forEach(printNumber) // 
 ```
+
 
 The `map` function on an array is very similar to `forEach`, except returns a value, which is a new array of the same length. Just like `forEach`, `map` takes 1 parameter, which is a function called `iter`, short for _iterator_. The iterator function is expected to accept as parameter any value from the array and return some other value. This return value is then placed in the same position of the new array as the value of the old array was in for the parameter to the iterator.
 
