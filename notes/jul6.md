@@ -41,16 +41,26 @@ const programer = {
   language: language
 }
 
-const describeRatio = (a, b) => "the ratio is " + a + "/" + b + ".";
+const describeRatio = (a, b) => "the ratio is " + a + "/" + b + "."
 
 ```
 
 2. Annotate the variable `runCommand` below.
+
 ```
 const runCommand = function (cmd: string, argv: string[]) {
+
   const error = shell.run(cmd, argv);
-  if (error == "") return true;
-  else return false;
+
+  if (error == "") {
+
+    return true;
+
+  } else {
+
+    return false;
+
+  }
 }
 ```
 
