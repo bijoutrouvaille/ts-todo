@@ -1,15 +1,24 @@
 <html>
   <head>
     <script src="bundle.js"></script>
+    <style>
+      div, .hello, #app {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .black {
+        background: black;
+      }
+      .white {
+        background: white;
+      }
+      td {
+        border: thin solid grey;
+        width: 10px;
+        height: 13px;
+      }
+    </style>
   </head>
   <body>
-    <div id="app">
-      <form class="LoginForm">
-        <input class="username" placeholder="username" />
-        <input class="password" placeholder="password" />
-        <button class="loginButton" type="submit">Log In</button>
-      </form>
-    </div>
-
+    <div id="app"></div>
   </body>
 </html>

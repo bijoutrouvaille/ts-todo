@@ -1,54 +1,61 @@
-import $ = require('jquery');
+import jquery = require('jquery');
+  
+  /**
+   * 
+   * Jul 27
+   * 
+   * ''1.
+   * Create an N x N grid of white cells.
+   * Each one allows toggling to and from black via a click.
+   * 
+   * ''2.
+   * Create a function to get the state of each cell.
+   * Create a button to set a random cell to white.
+   * Create a button to set a random cell to black.
+   * 
+   */
+
+
+
+const N = 4;
 
 function main() {
-  let x = 3;
 
-  const language = "typescript";
+  const app = jquery('#app');
 
-  const programer = {
-    level: "beginner",
-    language: language
+  const table = jquery('<table></table>');
+  
+  
+  
+  for (let row = 0; row < N; row++) {
+    
+    const topRow = jquery('<tr></tr>');
+    table.append(topRow);
+    
+    for (let col = 0; col < N; col++) {
+      
+      const cell = jquery('<td></td>');
+      topRow.append(cell);
+      
+      let state: boolean = true;
+
+      cell.click(function(e) {
+        e.preventDefault();
+        if (state) {
+          cell.toggleClass('black', true);
+          cell.toggleClass('white', false);
+          state = false;
+        } else {
+          cell.toggleClass('black', false);
+          cell.toggleClass('white', true);
+          state = true;
+        }
+      });
+    }
   }
 
-  const describeRatio: (a: string, b: string) => string 
-      = (a: string, b: string) => "the ratio is " + a + "/" + b + "."
   
-  function describeRatio2(a: string, b: string): string {
-    return "the ratio is " + a + "/" + b + ".";
-  }
 
-  const describeRatio3: (a: string, b: string) => string = describeRatio2;
-  /**
-   * Demonstrate the need for function annotations.
-   * 
-   * - Create a login form:
-   *    - username input
-   *    - password input
-   *    - login button: print to console username and password
-   * ---
-   * Create a login form:
-   *  wite HTML for form, inputs and the button
-   *  give them class names to be select with jQuery
-   * 
-   * Attach a click handler to the login button
-   * Get the value of the username and password inputs
-   * 
-   * Homework: Fully annotate the parameter function assignLoginButtonHandler
-   */
-  
-  assignLoginButtonHandler(printLoginInfo);
+  app.append(table);
 }
-$(main);
-
-function assignLoginButtonHandler(printInfo: ...) {
-  $('.loginButton').click(function(e: JQuery.ClickEvent<HTMLElement, null, HTMLElement, HTMLElement>){
-    e.preventDefault();
-    const username = $('.username').val() as string;
-    const password = $('.password').val() as string;
-    printInfo(username, password);
-  })
-}
-function printLoginInfo(user: string, pwd: string) {
-  console.log('the username is', user);
-  console.log('the password is', pwd);
-}
+jquery(main);
